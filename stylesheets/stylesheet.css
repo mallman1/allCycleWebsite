@@ -1,0 +1,188 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {display: block;}
+
+body { 
+  background-color: #FFFFFF;
+  color: #001B54;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+#wrapper {
+  background-color: #E0DF65;
+  box-shadow: 5px 5px 5px #C0BF00;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 960px;
+  width: 80%;
+}
+
+footer { 
+  background-color: #001B54;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-style: italic;
+  margin-top:20px;
+  padding: 20px;
+  text-align: center;
+}   
+
+footer a:link {color: #E0DF38;} 
+footer a:visited {color: #305EC0;}
+footer a:hover, footer a:focus {color: #3BCE34;}
+
+#content article, #content section { 
+  overflow: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#content { 
+  background-color: #63CE5D; 
+  margin-left: 175px;     
+  padding: 1px 20px 20px 20px; 
+}
+
+#content h2{
+  background-image: linear-gradient(to right, #056600 0%, #63CE5D 100%);
+  color: #FFFFFF;
+  padding-left: 5px;
+}
+#content ul {
+  list-style-image: url(../images/button.png); 
+  list-style-position: inside; 
+}
+h1 { 
+  background-image: url(../images/allcycle_banner.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 156px;
+  margin-bottom: 0; 
+  text-indent: -9999px;
+}
+
+
+nav a:link{color: #056600;}
+nav a:visited{color: #001B54;}
+nav a:hover, nav a:focus{color: #3BCE34;}
+
+.source a{
+  font-size: 12px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.source a:link{color: #E0DF65;}
+.source a:visited{color: #001B54;}
+.source a:hover, nav a:focus{color: #FFFFFF;}
+
+label{
+  float:left;
+  display: block;
+  text-align: right;
+  width: 120px;
+  padding-right: 20px;
+}
+
+input, textarea{
+  display: block;
+  margin-bottom: 20px;
+}
+
+img{
+  float:right;
+}
+
+form{
+  margin-top: 20px;
+}
+nav ul {
+  font-size: 20px;
+  list-style-type: none;  
+  padding-left: 0;
+}
+nav a{
+  text-decoration: none;
+}
+
+nav li{
+  box-shadow: 2px 2px 2px #305EC0;
+  width: auto;
+  padding:5px;
+}
+table{
+  margin: auto;
+  width: 80%
+}
+
+th, td{
+  padding: 10px;
+}
+
+td{
+  text-align:center;
+}
+
+tr:nth-of-type(odd){
+  background-color: #5779C0;
+  color:#056600;
+}
+@media only screen and (min-width: 481px) {
+  nav {
+  float: left;
+  font-weight: bold;
+  text-align: center; 
+  width: 160px;
+}
+
+}
+@media only screen and (max-width: 480px) {
+  body{
+    margin: 0
+  }
+  #wrapper{
+    width: auto;
+    min-width: 0;
+    margin: 0;
+  }
+  h1{
+    margin:0;
+    background-image: url(../images/allcycle_banner_mobile.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+  #content{
+    padding: 1px 10px 1px 10px;
+    margin: 0;
+    font-size: 90%;
+  }
+  nav>ul{
+    padding: 0;
+  }
+  nav>ul>li{
+    display: inline-block;
+    width: auto;
+    font-size: 120%;
+    text-align: center;
+    background-color: #63CE5D;
+    box-shadow: 2px 2px 2px #056600;
+    margin: 1%;
+    padding: 2.5%;
+  }
+  nav>a{
+    display: block
+  }
+  #content img{
+    float: none;
+    padding: 0;
+    margin: 1px;
+  }
+  section{
+    padding: 0;
+  }
+  article>img{
+   display: none;
+  }
+  label{
+  float: none;
+  text-align: left;
+  }
+}
